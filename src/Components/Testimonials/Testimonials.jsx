@@ -1,5 +1,5 @@
 import React from 'react';
-import './testimonials.css';
+import './Testimonials.css';
 import AVTR1 from '../../assets/Cipherschools.jpg';
 import AVTR2 from '../../assets/Udemy.png';
 import AVTR3 from '../../assets/Udemy.png';

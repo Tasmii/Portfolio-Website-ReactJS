@@ -1,5 +1,5 @@
 import React from 'react'
-import './about.css'
+import './About.css'
 import ME from '../../assets/About-me.jpg'
 import { SiLeetcode } from "react-icons/si";
 import { FaCode } from "react-icons/fa";
