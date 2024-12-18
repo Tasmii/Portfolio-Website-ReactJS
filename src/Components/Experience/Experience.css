@@ -1,0 +1,108 @@
+.experience__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.experience__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexibly resizing columns */
+  gap: 1.5rem;
+  width: 100%;
+  justify-items: center; /* Center the cards in each grid cell */
+  justify-content: center; /* Center the entire grid */
+}
+
+.skill__card {
+  position: relative;
+  width: 150px;
+  height: 150px; /* Keep the card square */
+  background-color: var(--color-variant); /* Initial background */
+  border-radius: 0.75rem;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.skill__card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-primary-variant);
+  background-color: transparent; /* Make background transparent on hover */
+}
+
+.skill__icon {
+  font-size: 4.5rem; /* Large icon size */
+  color: var(--color-primary);
+  padding-top: 1rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill__name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Make the overlay transparent */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  color: var(--color-white);
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill__card:hover .skill__name {
+  opacity: 1; /* Show the name on hover */
+}
+
+.skill__card:hover .skill__icon {
+  opacity: 0; /* Hide the icon when name is visible */
+}
+
+@media screen and (max-width: 1024px) {
+  .experience__grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust the min size to 120px */
+    gap: 1rem;
+  }
+
+  .skill__card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill__icon {
+    font-size: 3.5rem;
+  }
+
+  .skill__name {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .experience__grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Further reduce the min size for mobile */
+    gap: 0.5rem;
+  }
+
+  .skill__card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill__icon {
+    font-size: 3rem;
+  }
+
+  .skill__name {
+    font-size: 0.8rem;
+  }
+}
