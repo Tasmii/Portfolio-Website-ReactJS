@@ -41,8 +41,6 @@ const Header = () => {
             cursorColor="rgba(255,255,255,0.6)"
             multiText={[
               'Fullstack Web Developer',
-              'Frontend Developer',
-              'Backend Developer',
               'Data Analyst',
               'Product Manager',
               'UI/UX Designer',
