@@ -36,11 +36,11 @@ This is a React-based portfolio website showcasing skills, projects, and experie
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
+   git clone https://github.com/yourusername/Portfolio-Website-ReactJS.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd portfolio-website
+   cd Portfolio-Website-ReactJS
    ```
 3. Install dependencies:
    ```bash
