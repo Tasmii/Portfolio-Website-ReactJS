@@ -1,5 +1,3 @@
-// README.md for Portfolio Website
-
 # Portfolio Website
 
 This is a React-based portfolio website showcasing skills, projects, and experiences. The website includes interactive elements and modern design principles to engage viewers.
